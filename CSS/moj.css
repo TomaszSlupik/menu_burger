@@ -1,0 +1,58 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: gray;
+}
+nav {
+	position: absolute;
+	left: -200px;
+}
+
+.burger,
+.hide {
+	position: absolute;
+	top: 10px;
+	left: 220px;
+	cursor: pointer;
+	font-size: 38px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+}
+
+.menu {
+	height: 100vh;
+	width: 200px;
+	background-color: white;
+	color: black;
+}
+li {
+	text-transform: uppercase;
+	font-size: 25px;
+	margin: 20px;
+	line-height: 2.2;
+	list-style-type: none;
+	transition: 0.3s;
+}
+
+li:hover {
+	transform: scale(1.1);
+}
+
+.look {
+	transform: translateX(200px);
+	transition: 0.8s;
+}
+
+.hide {
+	display: none;
+}
